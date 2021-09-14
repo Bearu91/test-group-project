@@ -1,0 +1,27 @@
+.logo {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  margin: 16px 0px 16px 5px;
+  color: var(--secondary-color);
+   
+  
+
+  &__light-theme {
+    color: var(--main-color);
+  }
+
+  &__dark-theme {
+    color: var(--third-color);
+  }
+
+  
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    margin: 16px 93px 16px 0px;
+  }
+  
+}

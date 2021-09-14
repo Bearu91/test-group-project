@@ -1,0 +1,74 @@
+.hero {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column; 
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background/background-mobile.jpg");
+  padding: 118px 15px;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/background/background-tab.jpg");
+    padding: 118px 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/background/background-desktop.jpg");
+    padding: 200px 0px;
+  }
+
+  &__header {
+    max-width: 396px;
+    font-size: 26px;
+    line-height: 1.62;
+
+    font-weight: 900;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: getColor(header-secondary);
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__header {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.364;
+    }
+  }
+
+  &__btn {
+    padding: 10px 42px;
+    margin-top: 30px;
+    border: 0px;
+    border-radius: 4px;
+    background: getColor(decorative-primary);
+    color: getColor(article-secondary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    &:focus,
+    &:hover {
+      color: getColor(header-primary);
+      transition: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
