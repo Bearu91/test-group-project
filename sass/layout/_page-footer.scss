@@ -12,7 +12,8 @@
 
   @media screen and (min-width: 1280px) {
     justify-content: space-between;
-    display: flex;}
+    display: flex;
+  }
 .copyright {
   height: 45px;
   width: 100%;
@@ -68,13 +69,13 @@
     @media screen and (min-width: 776px) {
     
     font-size: 26px;
-    width: 340px;
+    max-width: 340px;
     
   }
   @media screen and (min-width: 1280px) {
     
     font-size: 30px;
-    width: 474px;
+    max-width: 474px;
     
   }
     }
@@ -91,13 +92,13 @@
     @media screen and (min-width: 776px) {
     
       font-size: 48px;
-      width: 340px;
+      max-width: 340px;
       
     }
     @media screen and (min-width: 1280px) {
     
       font-size: 58px;
-      width: 474px;
+      max-width: 474px;
       
     }
     
