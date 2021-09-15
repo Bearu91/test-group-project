@@ -926,6 +926,16 @@ body {
     display: flex;
   }
 }
+@media screen and (min-width: 776px) {
+  .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .footer .copyright {
   height: 45px;
   width: 100%;
@@ -960,10 +970,11 @@ body {
 .footer .footer-address {
   text-decoration: none;
   color: #fff5f6;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -990,9 +1001,10 @@ body {
 .footer .footer-address__title {
   text-transform: uppercase;
   letter-spacing: 0, 4em;
-  line-height: 34px;
-  font-size: 30px;
+  line-height: 20, 61px;
+  font-size: 18px;
   color: #ffa5ba;
+  max-width: 232px;
 }
 @media screen and (min-width: 776px) {
   .footer .footer-address__title {
@@ -1010,7 +1022,7 @@ body {
   font-family: Titan One;
   font-style: normal;
   font-weight: normal;
-  font-size: 58px;
+  font-size: 34px;
   line-height: 66px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1043,6 +1055,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: auto;
+  padding-top: 43px;
 }
 @media screen and (min-width: 1200px) {
   .footer .footer-social {
@@ -1053,6 +1070,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-top: 0;
   }
 }
 .footer .footer-social__title {
@@ -1060,6 +1078,8 @@ body {
   line-height: 16px;
   font-weight: 700;
   text-align: right;
+  padding-right: 20px;
+  padding-bottom: 43px;
 }
 @media screen and (min-width: 1280px) {
   .footer .footer-social__title {
@@ -1079,16 +1099,13 @@ body {
   -webkit-column-gap: 25px;
      -moz-column-gap: 25px;
           column-gap: 25px;
+  padding-right: 20px;
+  padding-bottom: 46px;
 }
 @media screen and (min-width: 1280px) {
   .footer .footer-social__list {
     padding-bottom: 50px;
     padding-right: 121px;
-  }
-}
-@media screen and (min-width: 776px) {
-  .footer .footer-social__list {
-    padding-bottom: 46px;
   }
 }
 .footer .footer-social__icon {
